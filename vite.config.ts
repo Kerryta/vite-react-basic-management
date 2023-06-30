@@ -22,7 +22,7 @@ export default defineConfig(({ command, mode }) => {
 			cors: true,
 			proxy: {
 				'/api': {
-					target: 'https://gdhongkang.cn:40001/api/doctor',
+					target: 'https://api.service',
 					changeOrigin: true,
 					secure: false,
 					rewrite: (path) => path.replace('/api', '/')
